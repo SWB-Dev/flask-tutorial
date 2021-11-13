@@ -37,7 +37,7 @@ def register():
         
         flash(error)
     
-    return render_template('auth/register.html')
+    return render_template("auth/auth_input.html", title="Register")
 
 @bp.route('/login', methos=("POST","GET"))
 def login():
@@ -61,7 +61,7 @@ def login():
         
         flash(error)
     
-    return render_template("auth/login.html")
+    return render_template("auth/auth_input.html", title="Login")
 
 @bp.route("/logout")
 def logout():
