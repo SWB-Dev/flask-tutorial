@@ -39,7 +39,7 @@ def register():
     
     return render_template("auth/auth_input.html", title="Register")
 
-@bp.route('/login', methos=("POST","GET"))
+@bp.route('/login', methods=("POST","GET"))
 def login():
     if request.method == "POST":
         username = request.form['username']
